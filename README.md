@@ -5,7 +5,7 @@ Simple HTTP POST requester.
 ## Example of use
 
 ```
-    $ npm i easy-request --save
+    $ npm i easy-post-request --save
 ```
 
 After install:
@@ -13,7 +13,7 @@ After install:
 ```
     /* jshint esversion: 6 */
 
-    const post = require('easy-request').post;
+    const post = require('easy-post-request').post;
 
     post('http://someurl',{someParameter:'someValue'})
         .then((body) => {
