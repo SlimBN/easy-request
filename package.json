@@ -1,0 +1,30 @@
+{
+  "name": "easy-request",
+  "version": "1.0.0",
+  "description": "Simple http requester",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusgn90/easy-request.git"
+  },
+  "keywords": [
+    "nodejs",
+    "es6",
+    "node",
+    "http",
+    "request"
+  ],
+  "author": "Jesús Ángel González Novez",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jesusgn90/easy-request/issues"
+  },
+  "homepage": "https://github.com/jesusgn90/easy-request#readme",
+  "dependencies": {
+    "q": "^1.5.0",
+    "request": "^2.81.0"
+  }
+}
