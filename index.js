@@ -2,15 +2,19 @@
 const request = require('request');
 const Q = require('q');
 
-{
+class EasyRequest{
+    
+    constructor(){
 
-    const post = (url,parameters) => {
+    }
+
+    static post(url,parameters) {
         let promise = Q.defer();
 
         if(!parameters instanceof Object || parameters === null || typeof parameters === 'undefined'){
-        
+
             promise.reject('Parameters type error');
-        
+
         }else {
 
             request({
@@ -21,8 +25,7 @@ const Q = require('q');
             },  (err, res, body) => {
                 if(err){
                     promise.reject(err);
-                }
-                else {
+                } else {
                     promise.resolve(body);
                 }
             });
@@ -30,10 +33,7 @@ const Q = require('q');
         }
 
         return promise.promise;
-    };
-
-    module.exports = {
-        post
-    };
+    }
 }
+module.exports = EasyRequest;
 
