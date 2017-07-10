@@ -13,10 +13,9 @@ Simple HTTP POST requester.
 
 After install:
 
-```
-    /* jshint esversion: 6 */
+```js
 
-    const post = require('easy-post-request').post;
+    const post = require('easy-post-request');
 
     post('http://someurl',{someParameter:'someValue'})
         .then((body) => {
